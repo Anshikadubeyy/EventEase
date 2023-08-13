@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--remix icon-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&family=Poppins:ital,wght@0,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Packages</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="packages.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+     <!-- navbar-->
+
+     <nav>
+      <div class="container-nav">
+        <img src="EElogo.png" alt="EventEase" width="240px" height="70px">
+          <a href="home.html"></a>
+         <div class="nav-menu">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html.html">Services</a></li>
+              <li><a href="packages.html">Packages</a></li>
+              <li><a href="categories.html">Categories</a></li>
+              <li><a href="contact_us.html">Contact Us</a></li>
+              <li><a href="login.html">Log In</a></li>
+              <div id="login" class="fa fa-user-circle"></div>
+          </ul></div> 
+          <button id="open-menu-btn"><i class="ri-menu-line"></i></button>
+          <button id="close-menu-btn"><i class="ri-close-fill"></i></button>
+      </div>
+   </nav>
+<!--heading-->
+     <header>
+        <div class="heading">
+            <h1>
+                PACKAGES
+            </h1>
+        </div>
+     </header>
+
+<!--Section 1-->
+      <section1>
+           <div class="box" data-aos="slide-left">
+            <div class="column1">
+              <a href="wedding.html">
+                <div class="imgslider1">
+                  <h1 class="text">ENGAGEMENT</h1>
+                </div>
+              </a>
+            </div>
+            <div class="column1">
+              <a href="eventmanagement.html">
+                <div class="imgslider2">
+                  <h1 class="text">BIRTHDAY</h1>
+                </div>
+              </a>
+            </div>
+            <div class="column1">
+              <a href="wedding.html">
+                <div class="imgslider3">
+                  <h1 class="text">WEDDING</h1>
+                </div>
+              </a>
+            </div>
+              </div>
+     </section1>
+
+<!--Section 2-->
+<section2>
+  <div class="box" data-aos="slide-right">
+   <div class="column2">
+    <a href="eventmanagement.html">
+      <div class="imgslider4">
+        <h1 class="text">COLLEGE FEST</h1>
+       </div>
+    </a>
+   </div>
+   <div class="column3">
+    <a href="eventmanagement.html">
+      <div class="imgslider5">
+        <h1 class="text">ANNIVERSARY</h1>
+       </div>
+    </a>
+   </div>
+     </div>
+</section2>
+
+<!-- footer -->
+
+<footer class="footer">
+    <div class="container-footer">
+      <div class="row">
+        <div class="footer-col">
+          <h4>EventEase</h4>
+          <ul>
+            <li><a href="#">about us</a></li>
+            <li><a href="">services</a></li>
+            <li><a href="">terms and conditions</a></li>
+            <li><a href="">privacy policy</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-col">
+          <h4>Get Help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">shipping</a></li>
+            <li><a href="#">return</a></li>
+            <li><a href="#">event status</a></li>
+            <li><a href="#">payment options</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-col">
+          <h4>categories</h4>
+          <ul>
+            <li><a href="">wedding</a></li>
+            <li><a href="">party</a></li>
+            <li><a href="">food festivals</a></li>
+            <li><a href="">venue</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <div class="socials-links">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  
+  </footer>
+  
+       <script src="https://kit.fontawesome.com/ae9f1bb8c0.js" crossorigin="anonymous"></script>
+  
+  
+       <script>
+           // change navbar styles on scrool 
+   window.addEventListener('scroll' , () => {
+      document.querySelector('nav').classList.toggle('window-scroll', window.scrollY > 0)
+   })
+  
+   // show/hide nav menu 
+   const menu = document.querySelector(".nav-menu");
+   const menuBtn = document.querySelector("#open-menu-btn");
+   const closeBtn = document.querySelector("#close-menu-btn");
+  
+  
+   menuBtn.addEventListener('click', () => {
+      menu.style.display = "flex";
+      closeBtn.style.display = "inline-block";
+      menuBtn.style.display = "none";
+   })
+  
+   // close nav menu 
+   const closeNav = () => {
+      menu.style.display="none";
+      closeBtn.style.display = "none";
+      menuBtn.style.display = "inline-block";
+   }
+  
+   closeBtn.addEventListener('click', closeNav) 
+     </script>
+  <!--Time management of section slider-->
+         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+         <script>
+           AOS.init({
+            delay: 80,
+            duration: 2000,
+           });
+         </script>
+  </body>
+  </html>

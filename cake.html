@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventEase</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="cake.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="container-nav">
+            <a href="home.html">EventEase</a>
+           <div class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html.html">Services</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="login.html">Log In</a></li>
+                <div id="login" class="fa fa-user-circle"></div>
+            </ul></div> 
+            <button id="open-menu-btn"><i class="ri-menu-line"></i></button>
+            <button id="close-menu-btn"><i class="ri-close-fill"></i></button>
+        </div>
+    </nav>
+    <div class="main-container">
+        <h2>Cake</h2>
+        <p></p>
+        <div class="filter-container">
+            
+            <div class="posts-collect">
+                <div class="posts-main-container">
+                    <div class="venue food">
+                        <div class="post-img">
+                            <img src="product/cake/c1.jpeg">
+                            <span class="category-name">
+                                Theobroma
+                            </span>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-content-top">
+                                <span><i class="fas fa-location-dot"></i>
+                                    Mahakali, Mumbai
+                                    <span class="comment">
+                                    <i class="fas fa-comment">14</i></span>
+                                </span>
+                            </div>
+                            <p>Timing: 8:00 am - 11:59 pm
+
+                            </p>
+                           
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <button id="showMessageButton">More Details</button>
+                        <div id="messageContainer" class="message-container">
+                          <div class="message-box">
+                            <div class="imgslider1"></div>
+                            <span class="close-button" onclick="closeMessage()">Close</span>
+                           <div class="content">
+                            <h3>Theobroma </h3>
+                            <h4>Description:</h4>
+                            <p>Theobroma is kind of a legendary shop, well known for its brilliant cakes and desserts. If you haven't bought a cake from Theobroma in Mumbai, then you better mark this thing off your bucket list because it's totally worth it. You will adore the stunning range of cakes, croissants, pastries, and whatnot! So, go and spoil yourself at this awesome cake shop in Mumbai and we promise you that you won't be disappointed.</p>
+                            <h4>Price:</h4><p>Rs (5,000 - 6,000)</p>
+                            <h4>Timing:</h4><p>8:00 am - 11:59 pm</p>
+                            <h4>Address:</h4><p> Shop 6, Takshila Building 5, Off Mahakali Caves Road, Mahakali, Mumbai</p>
+                            <h4>Phone:</h4><p>+918182881881</p>
+                            <h4>Cuisines:</h4><p>BakeryDessertsPastryCake</p>
+                            </div>
+                    </div>
+                    </div>
+                    </div>
+               
+            
+                    <div class="venue food">
+                        <div class="post-img">
+                            <img src="product/cake/c2.jpeg">
+                            <span class="category-name">
+                                Melting Morsels  
+                            </span>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-content-top">
+                                <span><i class="fas fa-location-dot"></i>
+                                    Pali Hill, Mumbai
+                                    <i class="fas fa-comment">16</i>
+                                </span>
+                            </div>
+                            <p>Timing: 11:30 am - 2:00 am</p>
+                            <!-- <h2>Rs.32,000</h2> -->
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                
+                            </div>
+                        </div>
+                        <button id="showMessageButton1">More Details</button>
+                        <div id="messageContainer1" class="message-container">
+                          <div class="message-box">
+                            <div class="imgslider2"></div>
+                            <span class="close-button" onclick="closeMessage1()">Close</span>
+                           <div class="content">
+                            <h3>Melting Morsels</h3>
+                            <h4>Description:</h4>
+                            <p>When we say Melting Morsels, think cute because it's all about cute things at this super charming pastry shop! This good ole fashioned shop is all about colors and interesting things. Everything at Melting Morsels begins with creativity so if you have a never-ending appetite that says rejoice in desserts, Melting Morsels is the place!</p>
+                            <h4>Price:</h4><p>Rs (5,000 - 6,000)</p>
+                            <h4>Timing:</h4><p>11:30 am - 2:00 am</p>
+                            <h4>Address:</h4><p>Shop 3, Dheeraj Swapna Chs, Pali Hill, Pali Hill, Mumbai</p>
+                            <h4>Phone:</h4><p>+919833003222</p>
+                            <h4>Cuisines:</h4><p>Italian</p>
+                            </div>
+                    </div>
+                    </div>
+                    </div>
+               
+            
+                    <div class="venue food">
+                        <div class="post-img">
+                            <img src="product/cake/c3.jpeg">
+                            <span class="category-name">
+                                Dark Temptations  
+                            </span>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-content-top">
+                                <span><i class="fas fa-location-dot"></i>
+                                    Marine Lines, Mumbai
+                                    <i class="fas fa-comment">29</i>
+                                </span>
+                            </div>
+                            <p>Timing: 9:30 am - 10:30 pm</p>
+                            
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                </div>
+                        </div>
+                        <button id="showMessageButton2">More Details</button>
+                        <div id="messageContainer2" class="message-container">
+                          <div class="message-box">
+                            <div class="imgslider3"></div>
+                            <span class="close-button" onclick="closeMessage2()">Close</span>
+                           <div class="content">
+                            <h3>Dark Temptations</h3>
+                            <h4>Description:</h4>
+                            <p>The name does full justice to the place as it's all about satiating your darkest fantasies involving food and chocolate! You'll love the variety of cakes here and more than that you will keep coming back for the cute customized cakes for sure. Since it's primarily a cake shop, we won't go into the ambiance details but yes, the cakes here are sure worth your money. </p>
+                            <h4>Price:</h4><p>Rs (5,000 - 6,000)</p>
+                            <h4>Timing:</h4><p>9:30 am - 10:30 pm</p>
+                            <h4>Address:</h4><p>24/30 Federation House, Opposite Metro Cinema, Marine Lines, Mumbai</p>
+                            <h4>Phone:</h4><p>+919819448989</p>
+                            <h4>Cuisines:</h4><p>Fast Food</p>
+                            </div>
+                    </div>
+                    </div>
+                    </div>
+                
+            
+                    <div class="venue food">
+                        <div class="post-img">
+                            <img src="product/cake/c4.jpeg">
+                            <span class="category-name">
+                                Ovenfresh
+                            </span>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-content-top">
+                                <span><i class="fas fa-location-dot"></i>
+                                    Shivaji Park, Mumbai
+                                    <i class="fas fa-comment">15</i>
+                                </span>
+                            </div>
+                            <p>Timing: 7:30 am - 11:59 pm</p>
+                            <!-- <h2>Rs.32,000</h2> -->
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                
+                                
+                                </div>
+                        </div>
+                        <button id="showMessageButton3">More Details</button>
+                        <div id="messageContainer3" class="message-container">
+                          <div class="message-box">
+                            <div class="imgslider4"></div>
+                            <span class="close-button" onclick="closeMessage3()">Close</span>
+                           <div class="content">
+                            <h3>Ovenfresh</h3>
+                            <h4>Description:</h4>
+                            <p>Ovenfresh is hands down a winner when it comes to delectable taste and style. One bakery that caters to mass taste without limiting their options, Ovenfresh is simply too good and yes, it's also true. We promise you that you will indeed love the range of cakes at Ovenfresh and will pine for more once you get the taste.</p>
+                            <h4>Price:</h4><p>Rs (4,000 - 5,000)</p>
+                            <h4>Timing:</h4><p>7:30 am - 11:59 pm</p>
+                            <h4>Address:</h4><p>Kiran Building, Ranade Road Shivaji Park, Shivaji Park, Mumbai</p>
+                            <h4>Phone:</h4><p>+918399678203</p>
+                            <h4>Cuisines:</h4><p>ItalianMexicanMediterraneanFast Food</p>
+                            </div>
+                    </div>
+                    </div>
+                    </div>
+                
+            
+                    <div class="venue food">
+                        <div class="post-img">
+                            <img src="product/cake/c5.jpeg">
+                            <span class="category-name">
+                                Chantilly 
+                            </span>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-content-top">
+                                <span><i class="fas fa-location-dot"></i>
+                                    Bandra West, Mumbai
+                                    <i class="fas fa-comment">25</i>
+                                </span>
+                            </div>
+                            <p>Timing: 2:00 pm - 11:59 pm</p>
+                            
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                </div>
+                        </div>
+                        <button id="showMessageButton4">More Details</button>
+                        <div id="messageContainer4" class="message-container">
+                          <div class="message-box">
+                            <div class="imgslider5"></div>
+                            <span class="close-button" onclick="closeMessage4()">Close</span>
+                           <div class="content">
+                            <h3>Chantilly</h3>
+                            <h4>Description:</h4>
+                            <p>If you chant and breathe desserts, then Chantilly is your dessert haven. The sweet spot has Insta-worthy space and is known for its cookie sundaes, and cheesecakes. Moreover, the wide array of gooey brownies and Nutella Philly cheesecake is quite well-known. Visit this place and enjoy its heavenly cakes.</p>
+                            <h4>Price:</h4><p>Rs (4,000 - 5,000)</p>
+                            <h4>Timing:</h4><p>2:00 pm - 11:59 pm</p>
+                            <h4>Address:</h4><p>Shop 6, Shaktiraj CHS, Opposite Two Roses Building, Near Gold’s Gym, Bandra West, Mumbai</p>
+                            <h4>Phone:</h4><p>+917370808080</p>
+                            <h4>Cuisines:</h4><p>Capuccino</p>
+                            </div>
+                    </div>
+                    </div>
+                    </div>
+               
+           
+                    <div class="venue food">
+                        <div class="post-img">
+                            <img src="product/cake/c6.jpeg">
+                            <span class="category-name">
+                                Ellipsis Bakery 
+                            </span>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-content-top">
+                                <span><i class="fas fa-location-dot"></i>
+                                    Worli Seaface, Mumbai
+                                    <i class="fas fa-comment">11</i>
+                                </span>
+                            </div>
+                            <p>Timing: 10:30 am - 11:00 pm</p>
+                            <!-- <h2>Rs.32,000</h2> -->
+                            <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <button id="showMessageButton5">More Details</button>
+                        <div id="messageContainer5" class="message-container">
+                          <div class="message-box">
+                            <div class="imgslider6"></div>
+                            <span class="close-button" onclick="closeMessage5()">Close</span>
+                           <div class="content">
+                            <h3>Ellipsis Bakery</h3>
+                            <h4>Description:</h4>
+                            <p>One of the best-rated bakeries in Worli, is a great spot for freshly baked goodies, you should definitely lay your hands on their butter croissant, pop rock cake, apple pie, sprinkled cupcake, etc. While all these are drool-worthy, slid straight into a food coma with their chocolate chip cookie and marshmallow jar.</p>
+                            <h4>Price:</h4><p>Rs (3,000 - 4,000)</p>
+                            <h4>Timing:</h4><p>10:30 am - 11:00 pm</p>
+                            <h4>Address:</h4><p>Inside BMC Asphalt Compound, S.K. Ahire Marg, Worli Seaface, Mumbai</p>
+                            <h4>Phone:</h4><p>+912266164653</p>
+                            <h4>Cuisines:</h4><p>Fast Food</p>
+                            </div>
+                    </div>
+                    </div>
+                    </div>
+
+        </div>
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="container-footer">
+          <div class="row">
+            <div class="footer-col">
+              <h4>EventEase</h4>
+              <ul>
+                <li><a href="#">about us</a></li>
+                <li><a href="">services</a></li>
+                <li><a href="">terms and conditions</a></li>
+                <li><a href="">privacy policy</a></li>
+              </ul>
+            </div>
+      
+            <div class="footer-col">
+              <h4>Get Help</h4>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">shipping</a></li>
+                <li><a href="#">return</a></li>
+                <li><a href="#">event status</a></li>
+                <li><a href="#">payment options</a></li>
+              </ul>
+            </div>
+      
+            <div class="footer-col">
+              <h4>categories</h4>
+              <ul>
+                <li><a href="">wedding</a></li>
+                <li><a href="">party</a></li>
+                <li><a href="">food festivals</a></li>
+                <li><a href="">venue</a></li>
+              </ul>
+            </div>
+      
+            <div class="footer-col">
+              <h4>Follow Us</h4>
+              <div class="socials-links">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      
+      </footer>
+    <script src="script.js"></script>
+</body>
+</html>

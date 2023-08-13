@@ -1,0 +1,479 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&family=Lumanosimo&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --color-white:#fff;
+    --color-light:rgb(255,255,255,0.7);
+    --color-black:#000;
+    --color-bg: #7a7a7a;
+    --color-bg1:#2e3267;
+    --color-bg2:#424890;
+    --color-bg3: #101010;
+    --color-bg4: #b3b3b3;
+
+    --container-width-lg:80%;
+    --container-width-md:90%;
+    --container-width-sm:94%;
+
+    --transition:all 400ms ease;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color:var(--color-white) ;
+    background: var(--color-white);
+}
+
+/** navbar **/
+nav{
+  background: linear-gradient(45deg, #c193c5 , #7bc6cc);
+    width: 1300px;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+}
+
+ 
+/** change navbar style while scrolling **/
+.window-scroll {
+    background: #2b2b2b;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.container-nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container-nav a{
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 500;
+    margin-right: auto;
+    padding: 40px;
+    color:var(--color-white);
+} 
+.container-nav a img {
+    width: 50%;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+}
+
+.container-nav ul {
+    list-style: none;
+    display: inline-flex;
+    height: 3rem;
+}
+nav button {
+    display: inline-block;
+    background: transparent;
+    color: var(--color-white);
+    padding: 12px 12px;
+    border: 1px solid transparent;
+    font-size: 25px;
+    font-weight: 500;
+    transition: var(--transition); 
+    display: none; 
+}
+.nav-menu li a {
+    transition: 0.25s ease;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    font-size: large;
+    padding: 15px;
+    margin-right: 20px;
+}
+ul:hover a{
+    color: var(--color-bg);
+}
+ul:hover a:hover{
+    color: #fff;
+    box-shadow: 0 2px 0 0 turrentcolor;
+    border-bottom: .2px solid #e91e63;
+}
+.nav-menu #login {
+    font-size: 30px;
+    color: var(--color-white);
+    cursor: pointer;
+    padding-right: 40px;
+}
+
+header{
+    font-family: 'Roboto', cursive;
+    font-size: 16px;
+    color: var(--color-bg3);
+    position: relative;
+    overflow: hidden;
+}
+
+/*heading*/
+.heading{
+    padding: 100px;
+    height: 100px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.heading:hover{
+    transition: transform 0.2s ease;
+    transform: scale(1.15);
+}
+
+/*section1*/
+.section1{
+    margin-left: 100px;
+    margin-bottom: 50px;
+    height: 350px;
+    width: 1050px;
+}
+
+.imgslider1{
+    border: solid black;
+    border-radius: 10px;
+    border-width: 4px;
+    width: 360px;
+    height: 350px;
+    background-image: url("Section1/S1P1.png");
+    background-size: 100% 100%;
+    animation: changeImage 20s linear infinite;
+}
+
+.imgslider1:hover{
+    transition: transform 0.2s ease;
+    transform: scale(1.05);
+}
+
+@keyframes changeImage{
+    0%{
+        background-image:url("Section1/S1P1.png");
+    }
+    25%{
+        background-image:url("Section1/S1P2.png");
+    }
+    50%{
+        background-image:url("Section1/S1P3.png");
+    }
+    75%{
+        background-image:url("Section1/S1P4.png");
+    }
+    100%{
+        background-image:url("Section1/S1P5.png");
+    }
+}
+
+.box1{
+    border: solid black;
+    border-radius: 10px;
+    border-width: 3px;
+    background-color: lightgray;
+    display: flex;
+    height: 350px;
+    width: 1050px;
+    margin: 0px;
+    padding: 0px;
+    animation-name: slide;  
+    animation-duration: 3s; 
+    animation-iteration-count: 1;
+    cursor: pointer;
+}
+@keyframes slide{
+    from{
+        height: 0px;
+    }
+    to{
+        height: 350px;
+    }
+}
+.box1:hover{
+    background-blend-mode: hard-light;
+    transition: all 1s ease-in-out 0s;
+    background-color: rgb(134, 186, 200);
+}
+
+.subheading1{
+    margin-left:20px;
+    margin-top: 5px;
+    color: black;
+    font-family: 'Lumanosimo', cursive;
+    font-size: large;
+    color: #091061;
+}
+
+.content1{
+    width: 680px;
+    font-size: larger;
+    margin-top: 30x;
+    margin-left: 5px;
+    margin-right: 20px;
+    font-weight: 500;
+    font-family: 'Edu SA Beginner', cursive;
+    color: black;
+    
+}
+
+.content1:hover{
+    transition: transform 0.2s ease;
+    transform: scale(0.95);
+}
+
+/*section2*/
+.section2{
+    margin-left: 100px;
+    margin-bottom: 50px;
+    height: 350px;
+    width: 1050px;
+}
+
+
+.imgslider2{
+    border: solid black;
+    border-radius: 10px;
+    border-width: 4px;
+    width: 360px;
+    height: 350px;
+    background-image: url("Section2/S2P1.png");
+    background-size: 100% 100%;
+    animation: changeImage2 20s linear infinite;
+}
+
+.imgslider2:hover{
+    transition: transform 0.2s ease;
+    transform: scale(1.05);
+}
+
+@keyframes changeImage2{
+    0%{
+        background-image:url("Section2/S2P1.png");
+    }
+    25%{
+        background-image:url("Section2/S2P2.png");
+    }
+    50%{
+        background-image:url("Section2/S2P3.png");
+    }
+    75%{
+        background-image:url("Section2/S2P4.png");
+    }
+    100%{
+        background-image:url("Section2/S2P5.png");
+    }
+}
+
+.box2{
+    background-color: lightgray ;
+    border: solid black;
+    border-width: 3px;
+    border-radius: 10px;
+    display: flex;
+    height: 350px;
+    width: 1050px;
+    margin: 0px;
+    cursor: pointer; 
+}
+
+.box2:hover{
+    background-blend-mode: hard-light;
+    transition: all 1s ease-in-out 0s;
+    background-color: rgb(251, 154, 57);
+}
+
+.subheading2{
+    margin-left:20px;
+    margin-top: 5px;
+    color: black;
+    font-family: 'Lumanosimo', cursive;
+    font-size: large;
+    color:#4a2f06 ;
+}
+
+.content2{
+    width: 680px;
+    font-size: larger;
+    margin-top: 30x;
+    margin-left: 5px;
+    margin-right: 20px;
+    font-weight: 500;
+    font-family: 'Edu SA Beginner', cursive;
+    color: black;
+    
+}
+
+.content2:hover{
+    transition: transform 0.2s ease;
+    transform: scale(0.95);
+}
+
+/*section3*/
+.section3{
+    margin-left: 100px;
+    margin-bottom: 50px;
+    height: 350px;
+    width: 1050px;
+}
+.imgslider3{
+    border: solid black;
+    border-radius: 10px;
+    border-width: 4px;
+    width: 360px;
+    height: 350px;
+    background-image: url("Section1/S1P1.png");
+    background-size: 100% 100%;
+    animation: changeImage3 20s linear infinite;
+}
+
+.imgslider3:hover{
+    transition: transform 0.2s ease;
+    transform: scale(1.05);
+}
+
+@keyframes changeImage3{
+    0%{
+        background-image:url("Section3/S3P1.png");
+    }
+    25%{
+        background-image:url("Section3/S3P2.png");
+    }
+    50%{
+        background-image:url("Section3/S3P3.png");
+    }
+    75%{
+        background-image:url("Section3/S3P4.png");
+    }
+    100%{
+        background-image:url("Section3/S3P5.png");
+    }
+}
+
+.box3{
+    background-color:lightgray;
+    border: solid black;
+    border-width: 3px;
+    border-radius: 10px;
+    display: flex;
+    height: 350px;
+    width: 1050px;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.box3:hover{
+    background-blend-mode: hard-light;
+    transition: all 1s ease-in-out 0s;
+    background-color: rgb(142, 210, 142);
+}
+
+.subheading3{
+    margin-left:20px;
+    margin-top: 5px;
+    color: black;
+    font-family: 'Lumanosimo', cursive;
+    font-size: large;
+    color: rgb(16, 85, 46);
+}
+
+.content3{
+    width: 680px;
+    font-size: larger;
+    margin-top: 30x;
+    margin-left: 5px;
+    margin-right: 20px;
+    font-weight: 500;
+    font-family: 'Edu SA Beginner', cursive;
+    color: black;
+    
+}
+
+.content3:hover{
+    transition: transform 0.2s ease;
+    transform: scale(0.95);
+}
+
+/* footer */ 
+footer {
+  background-color: #2b2b2b;
+  padding: 70px 0;
+  line-height: 1.5;
+}
+.container-footer {
+  max-width: 1170px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+ul {
+  list-style: none;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+} 
+.footer-col h4 {
+  font-size: 18px;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-family: "poppins", sans-serif;
+  font-weight: 500;
+  position: relative;
+} 
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+} 
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-decoration: capitalize;
+  color: #ffff;
+  transition: .3s ease all;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbb;
+  display: block;
+}
+.footer-col ul li a:hover {
+  color: #fff;
+  padding-left: 10px;
+}
+.footer-col .socials-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(225, 225, 225, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.footer-col .socials-links a:hover {
+  color: #24262b;
+  background-color: #fff;
+}
+
